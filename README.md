@@ -118,6 +118,10 @@ REACT_APP_API_URL=http://localhost:8000
 
 - Upload documents through the UI or API
 - Store them in the backend upload folder
+
+## Contributors
+
+- Yatin
 - Index the content for retrieval
 - List and delete uploaded documents
 
