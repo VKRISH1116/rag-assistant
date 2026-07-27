@@ -195,6 +195,10 @@ cd backend
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
+## Contributors
+
+- Yatin
+
 ## License
 
 This project is intended for educational and portfolio use.
