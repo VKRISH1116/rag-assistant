@@ -12,11 +12,13 @@ ENV/
 # Environment variables
 .env
 
-# Uploads
+# Uploads (user-supplied documents)
 uploads/
 *.pdf
 *.docx
 *.txt
+# ...but requirements.txt is source, not an upload
+!requirements.txt
 
 # Vector stores
 *.faiss
