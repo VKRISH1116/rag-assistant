@@ -21,11 +21,11 @@ HAS_API_KEY = bool(os.getenv("OPENAI_API_KEY"))
 
 # Use demo mode if no API key or explicitly requested
 if USE_DEMO_MODE or not HAS_API_KEY:
-    print("🔓 Running in DEMO MODE (No OpenAI API required - Free!)")
+    print("[DEMO MODE] Running without OpenAI API (free, keyword retrieval)")
     rag_engine = RAGEngineDemo()
     agent = None  # Agentic workflow requires OpenAI
 else:
-    print("🔐 Running in FULL MODE (OpenAI API enabled)")
+    print("[FULL MODE] Running with OpenAI API enabled")
     rag_engine = RAGEngine()
     agent = AgenticWorkflow(rag_engine)
 
